@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="NoteCell" customModule="Notes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fap-WM-6hB">
+                        <rect key="frame" x="10" y="10" width="21" height="21"/>
+                        <color key="backgroundColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="Gpd-G9-riB"/>
+                            <constraint firstAttribute="height" constant="21" id="Tad-sp-kKT"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заголовок заметки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAx-tl-XP9">
+                        <rect key="frame" x="41" y="10" width="269" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvo-uT-v9Q">
+                        <rect key="frame" x="10" y="41" width="300" height="111.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fap-WM-6hB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3LU-1d-OrQ"/>
+                    <constraint firstItem="fap-WM-6hB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8ob-Ti-Hj2"/>
+                    <constraint firstAttribute="bottom" secondItem="rvo-uT-v9Q" secondAttribute="bottom" constant="10" id="AEk-g4-xHk"/>
+                    <constraint firstItem="LAx-tl-XP9" firstAttribute="leading" secondItem="fap-WM-6hB" secondAttribute="trailing" constant="10" id="Khn-yg-sKh"/>
+                    <constraint firstItem="LAx-tl-XP9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NU1-f0-BTf"/>
+                    <constraint firstAttribute="trailing" secondItem="LAx-tl-XP9" secondAttribute="trailing" constant="10" id="UKX-qg-2UU"/>
+                    <constraint firstItem="rvo-uT-v9Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XIS-SK-OGb"/>
+                    <constraint firstItem="rvo-uT-v9Q" firstAttribute="top" secondItem="LAx-tl-XP9" secondAttribute="bottom" constant="10" id="YZS-VL-5ri"/>
+                    <constraint firstAttribute="trailing" secondItem="rvo-uT-v9Q" secondAttribute="trailing" constant="10" id="cv4-7q-Ec8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="importanceView" destination="fap-WM-6hB" id="PYy-vC-Z0U"/>
+                <outlet property="noteText" destination="rvo-uT-v9Q" id="IBl-Az-22z"/>
+                <outlet property="noteTitle" destination="LAx-tl-XP9" id="0rM-ro-ZUl"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="138.28125"/>
+        </tableViewCell>
+    </objects>
+</document>
